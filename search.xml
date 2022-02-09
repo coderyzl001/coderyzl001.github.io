@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>日志</title>
+      <link href="/2022/02/09/%E6%97%A5%E5%BF%97/"/>
+      <url>/2022/02/09/%E6%97%A5%E5%BF%97/</url>
+      
+        <content type="html"><![CDATA[<p>　　　　　“静月楼台空烦恼<br>　　　　　　何处梦醉寄逍遥<br>　　　　　　瑶琴缥缈纷纷扰<br>　　　　　　惊扰故人的好觉<br>　　　　　　叹人生路兜兜转转<br>　　　　　　与你余情未了<br>　　　　　　谁的笑飞过了天涯海角挂眉梢<br>　　　　　　菩提下为浮生高歌一曲多寂寥<br>　　　　　　月夜灯火阑珊 浊酒一壶<br>　　　　　　醉倒在墙角<br>　　　　　　再回眸盼来世相邀<br>　　　　　　梦回当时年少<br>　　　　　　怕旧时声音会肆意吵闹太喧嚣<br>　　　　　　你离开的步调不轻不重刚刚好<br>　　　　　　缓缓在我心头 筑起一座<br>　　　　　　半世的监牢<br>　　　　　　静月楼台空烦恼<br>　　　　　　何处梦醉寄逍遥<br>　　　　　　瑶琴缥缈纷纷扰<br>　　　　　　惊扰故人的好觉<br>　　　　　　叹人生路兜兜转转<br>　　　　　　与你余情未了<br>　　　　　　谁的笑飞过了天涯海角挂眉梢<br>　　　　　　菩提下为浮生高歌一曲多寂寥<br>　　　　　　月夜灯火阑珊 浊酒一壶<br>　　　　　　醉倒在墙角<br>　　　　　　再回眸盼来世相邀<br>　　　　　　梦回当时年少<br>　　　　　　怕旧时声音会肆意吵闹太喧嚣<br>　　　　　　你离开的步调不轻不重刚刚好<br>　　　　　　缓缓在我心头 筑起一座<br>　　　　　　半世的监牢<br>　　　　　　叹人生路兜兜转转<br>　　　　　　与你余情未了<br>　　　　　　谁的笑飞过了天涯海角挂眉梢<br>　　　　　　菩提下为浮生高歌一曲多寂寥<br>　　　　　　月夜灯火阑珊 浊酒一壶<br>　　　　　　醉倒在墙角<br>　　　　　　再回眸盼来世相邀<br>　　　　　　梦回当时年少<br>　　　　　　怕旧时声音会肆意吵闹太喧嚣<br>　　　　　　你离开的步调不轻不重刚刚好<br>　　　　　　缓缓在我心头 筑起一座<br>　　　　　　半世的监牢”<br>　　　　　　        歌词好美 字字入心扉<br>　　　　　　　　歌词好伤 刀刀砍命脉<br>　　　　　　　　缓缓在我心头 升起一座 半生的监牢<br>　　　　　　　　虽然活在世界 一切自由<br>　　　　　　　　但是 这坚牢怕是这辈子出不去了<br>　　　　　　　　也罢 出去干啥<br>　　　　　　　　何苦自己为难自己少年<br>　　　　　　　　所谓出去不过是从一个监狱<br>　　　　　　　　到了另一个大点的监狱<br>　　　　　　　　                                            2020.2.9<br>　　　　　　　　                                               Yzl　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>问题解决0001</title>
+      <link href="/2022/01/18/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B30001/"/>
+      <url>/2022/01/18/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B30001/</url>
+      
+        <content type="html"><![CDATA[<p>部署过程中可能会出现错误</p><p>fatal: unable to access ‘<a href="https://github.com/a956551943/a956551943.github.io/&#39;">https://github.com/a956551943/a956551943.github.io/&#39;</a>: Encountered end of file<br>FATAL {<br>  err: Error: Spawn failed<br>      at ChildProcess.<anonymous> (/usr/local/src/hexo/hanyubolg/node_modules/hexo-util/lib/spawn.js:51:21)<br>      at ChildProcess.emit (events.js:376:20)<br>      at Process.ChildProcess._handle.onexit (internal/child_process.js:277:12) {<br>    code: 128<br>  }<br>} Something’s wrong. Maybe you can find the solution here: %s <a href="https://hexo.io/docs/troubleshooting.html">https://hexo.io/docs/troubleshooting.html</a><br>解决方式一：</p><p>##进入站点根目录<br>cd /usr/local/src/hexo/hanyubolg/</p><p>##删除git提交内容文件夹<br>rm -rf .deploy_git/</p><p>##执行<br>git config –global core.autocrlf false</p><p>##最后<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>解决方式二：有可能是你的git repo配置地址不正确,可以将http方式变更为ssh方式</p><p>##进入站点根目录<br>cd /usr/local/src/hexo/hanyubolg/</p><p>##删除git提交内容文件夹<br>vim _config.yml</p><p>##修改<br>deploy:</p><p>type: git</p><p>repo: <a href="https://github.com/yourname/yourname.github.io.git">https://github.com/yourname/yourname.github.io.git</a> -&gt; <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#116;&#104;&#x75;&#x62;&#46;&#99;&#x6f;&#109;">&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#116;&#104;&#x75;&#x62;&#46;&#99;&#x6f;&#109;</a>:a956551943/weixiaohui.github.io.git</p><p>branch: master</p><p>##最后<br>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d<br>解决方式三：不建议</p><p>##进入站点根目录<br>cd /usr/local/src/hexo/hanyubolg/</p><p>##进入depoly文件夹<br>cd .deploy_git/</p><p>##强制推送<br>git push -f</p><p>作者：翰宇<br>链接：<a href="https://www.jianshu.com/p/c60ad2a33a1e">https://www.jianshu.com/p/c60ad2a33a1e</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>山川，河流，草木，万物有灵</title>
       <link href="/2022/01/18/%E9%9A%8F%E7%AC%94/"/>
       <url>/2022/01/18/%E9%9A%8F%E7%AC%94/</url>

@@ -129,3 +129,11 @@ deploy:
   type: git
   repository: https://github.com/coderyzl001/coderyzl001.github.io.git
   branch: main
+
+
+
+
+  deploy:
+  type: git
+  repository: https://github.com/coderyzl001/coderyzl001.github.io.
+  branch: master

@@ -1,0 +1,62 @@
+# html lang
+language: en
+
+title: Yzl
+author: Yzl
+
+# index page navigation
+menu:
+  Home:
+    path: /
+    icon: home
+  Archives:
+    path: /archives
+    icon: archive
+  About:
+    path: /about
+    icon: user-circle
+
+social:
+  github:
+    icon: fa-github-alt 
+    url: https://github.com/MRsoymilk
+  gmail:
+    icon: fa-envelope
+    url: mailto:codermrsoymilk@gmail.com
+
+# code highlight
+highlight: railscasts
+
+# date style
+date:
+  format: dddd, MMMM Do YYYY, h:mm:ss a
+
+# show system information
+system: true
+
+# show article number
+show_count: false
+
+# show in index page
+cmd_category: "tree"
+cmd_tag: "dir"
+
+# LiveRe
+livere:
+  status: true
+  livere_data_uid: "MTAyMC80NjA4MS8yMjU5Mg=="
+
+# Valine
+valine:
+  status: true
+  appid: "5bHFwYPW2iHWCiV7WmNRSenk-gzGzoHsz"
+  appkey: "2q4UgVDTmeJf9Phe8VbnNKyC"
+
+# ChangYan
+changyan:
+  status: true
+  appid: "cyuGH4lBk"
+  appkey: "ae32d85e4ca99348209aedfd3ae01478"
+
+local_search:
+     enable:true

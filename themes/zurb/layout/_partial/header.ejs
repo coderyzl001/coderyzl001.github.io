@@ -1,0 +1,55 @@
+<header class="l-header">
+  <div class="l-banner"></div>
+
+  <div class="contain-to-grid sticky">
+
+      <nav id="main-nav" class="top-bar">
+        <ul class="title-area">
+            <li class="name">
+              <h1 class="logo-wrap">
+                <a href="<%- url_for() %>" id="logo"><%= config.title %></a>
+              </h1>
+              <% if (theme.subtitle){ %>
+                <h2 class="hide">
+                  <%= theme.subtitle %>
+                </h2>
+              <% } %>
+            </li>
+             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon">
+              <a role="button" href="#idOfRightMenu" class="left-off-canvas-toggle menu-icon" ><span></span></a>
+            </li>
+          </ul>
+
+
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right">
+            <% for (var i in theme.menu){ %>
+            <li>
+              <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+            </li>
+            <% } %>
+          </ul>
+        </section>
+
+
+      <ul id="nav-search-form" class="left">
+        <li>
+        <% if (theme.rss){ %>
+          <a id="nav-rss-link" class="nav-icon" href="<%- theme.rss %>" title="RSS Feed"></a>
+        <% } %>
+        </li>
+
+        <li class="has-form">
+            <%- partial('_widget/search') %>
+        </li>
+      </ul>
+
+      </nav>
+
+    </div>
+
+  </div>
+</header>
+

@@ -1,0 +1,9 @@
+<nav id="mobile-nav" class="left-off-canvas-menu">
+  <ul class="off-canvas-list">
+  <% for (var i in theme.menu){ %>
+    <li role="menuitem">
+      <a href="<%- url_for(theme.menu[i]) %>" class="mobile-nav-link"><%= i %></a>
+    </li>
+  <% } %>
+  </ul>
+</nav>

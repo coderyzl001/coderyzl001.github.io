@@ -4,7 +4,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>5 [ Yzl ]</title>
+  <title>多级分类 [ Yzl ]</title>
   
 <link rel="shortcut icon" href="/favicon/favicon.ico">
 
@@ -90,7 +90,7 @@
   <div class="milk-body">
     
 <div class="draggable-toc">
-  <div class="toc-title">5</div>
+  <div class="toc-title">多级分类</div>
   <p>process: <span>0</span></p>
   <div class="progress-container">
     <div class="progress-bar" id="bar"></div>
@@ -99,7 +99,7 @@
 </div>
 
 <div class="post-content" id="post-content">
-  <div id="top">5</div>
+  <div id="top">多级分类</div>
   <div class="post">
     
     <div class="content-categories">
@@ -108,12 +108,55 @@
       <ul>
         <li>categories</li>
         
+          <li>&gt;</li>
+          <li>
+            <a href="/categories/python/">
+          python
+        </a>
+          </li>
+      
+          <li>&gt;</li>
+          <li>
+            <a href="/categories/python/思路/">
+          思路
+        </a>
+          </li>
+      
       </ul>
     
     </div>
     <hr>
     
-    
+    <p>  当你的内容提量越来越大的时候，你可能迫切的需要一个合理的内容分类。</p>
+<p>  而，这一点，我们可以用多级目录来解决。</p>
+<p>  想象一下，这样一个场景，你的其中一个分类是 python ，但是， python 里面包括基础、进阶还与其他。</p>
+<p>  如果都只用一个 python 分类的话，以后会变得越来越庞杂。</p>
+<p>  所以，一级目录是 python 二级目录是 基础、进阶、其他，三级是。。。</p>
+<p>  父子分类</p>
+<p>  这个可以用下面的形式解决</p>
+<pre><code>categories:
+- python
+- 模块
+</code></pre>
+<p>  这样写的形式如下面所示</p>
+<pre><code>python
+模块
+</code></pre>
+<p>  要记住，以 - 的分类是父子关系，不是同级关系。</p>
+<p>  同级分类</p>
+<p>  如果要使用同级关系，需要这样</p>
+<pre><code>categories:
+- [python,模块,PIL]
+- [python,模块,matplotlib]
+</code></pre>
+<p>  这样的效果如下</p>
+<pre><code>python
+模块
+PIL
+matplotlib
+</code></pre>
+<p>  这篇文章同时在 PIL 和 matplotlib 子分类下。</p>
+
     
     <hr>
     <div class="content-tags">

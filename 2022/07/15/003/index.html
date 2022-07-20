@@ -4,7 +4,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>3 [ Soymilk ]</title>
+  <title>3 [ Yzl ]</title>
   
 <link rel="shortcut icon" href="/favicon/favicon.ico">
 
@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="/css/milk.css">
 
 
-<meta name="generator" content="Hexo 6.0.0"></head>
+<meta name="generator" content="Hexo 6.2.0"></head>
 <body>
   <div class="milk-header">
      
@@ -131,6 +131,8 @@
 <blockquote>
 <p>1<br>! <a href=""></a></p>
 </blockquote>
+<p>下面文章来源于：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44861399/article/details/104936907">https://blog.csdn.net/weixin_44861399/article/details/104936907</a></p>
+<p>一、本地配置<br>由于是在个人电脑上配置的hexo，部署也不方便，如果在另外一台机子上写博客，没有hexo的配置也不行，另一方面出于备份项目的目的，最好的办法是将本地hexo站点备份到Github上。<br>新建hexo文件夹存放分支工作目录。<br>mkdir hexo<br>1<br>把你的GitHub的远程仓库克隆到hexo文件夹<br>git clone <a target="_blank" rel="noopener" href="https://github.com/DAQ121/DAQ121.github.io">https://github.com/DAQ121/DAQ121.github.io</a> hexo<br>1<br>删除除了版本管理的.git之外的所有文件和文件夹<br>cd hexo<br>rm -r *<br>1<br>2<br>把要备份的文件复制到hexo目录<br>scaffolds&#x2F;<br>source&#x2F;<br>themes&#x2F;<br>.gitignore<br>_config.yml<br>package.json<br>1<br>2<br>3<br>4<br>5<br>6<br>如果使用的主题是从Github克隆的，那么使用命令删除它的Git文件（以next主题为例）,否则无法将主题文件push<br>rm -R themes&#x2F;next&#x2F;.git*<br>1<br>二、github配置<br>github创建一个hexo分支<br>git checkout -b hexo<br>1<br>保存所有文件到暂存区<br>git add –all<br>1<br>提交变更<br>git commit -m “创建hexo分支”<br>1<br>推送到github，并用–set-upstream与origin创建关联，将hexo设置为默认分支<br>git push –set-upstream origin hexo<br>1<br>三、合并管理<br>现在有两个需要管理的文件夹，一个是blog，一个是hexo，但是每次发布文章的时候如果要提交两次就很失效率，<br>将本地hexo分支中的.git文件夹复制到blog根目录中<br>cp -a .git ..&#x2F;blog<br>1<br>master分支的文件则由hexo管理，编辑hexo配置文件_config.yml<br>deploy:<br>   type: git<br>   repo: <a target="_blank" rel="noopener" href="https://github.com/DAQ121/DAQ121.github.io">https://github.com/DAQ121/DAQ121.github.io</a><br>   branch: master<br>1<br>2<br>3<br>4<br>四、发布文章<br>新建文章<br>hexo new test<br>1<br>将相关更改推送到hexo分支<br>git add .<br>git commit -m “发表文章test”<br>git push origin hexo<br>1<br>2<br>3<br>将静态文件推送到master分支<br>hexo clean<br>hexo d -g<br>1<br>2<br>五、使用的时候如何迁移<br>将hexo分支克隆下来<br>git clone -b hexo <a target="_blank" rel="noopener" href="http://github.com/DAQ121/DAQ121.github.io">http://github.com/DAQ121/DAQ121.github.io</a><br>1<br>安装hexo依赖<br>cnpm install<br>1<br>只不过每次发文章的时候，要输入用户名和密码。<br>————————————————<br>版权声明：本文为CSDN博主「盒子里的反派」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44861399/article/details/104936907">https://blog.csdn.net/weixin_44861399/article/details/104936907</a></p>
 
     
     <hr>
@@ -248,5 +250,12 @@
 <script src="/js/milk.js"></script>
 
 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+
+<script src="tipuesearch/tipuesearch_content.js"></script>
+<link rel="stylesheet" href="tipuesearch/tipuesearch.css">
+<script src="tipuesearch/tipuesearch_set.js"></script>
+<script src="tipuesearch/tipuesearch.min.js"></script>
 </body>
 </html>

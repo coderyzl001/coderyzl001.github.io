@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>searchshixian</title>
+      <link href="/2022/07/20/searchshixian/"/>
+      <url>/2022/07/20/searchshixian/</url>
+      
+        <content type="html"><![CDATA[<p>  对于一个没有编程基础的孩子，这是一个十分难的事情，所以更要记录，以防自己忘记。<br>来先看</p><p>先看后面的步骤，这是最重要的，我们要<br>编写搜索视图！！！！视图的话实在主题目录文件下的&#x2F;layout&#x2F;_widget&#x2F;创建试视图文件&#x2F;<br>然后编写搜索脚本！！：脚本是在主题目录下的source&#x2F;js&#x2F;创建新的脚本文件<br>然后将视图和脚本联系起来<br>即在主题目录&#x2F;layout&#x2F;_partial&#x2F;footer.ejs  下添加相关代码</p><pre><code>&lt;% if (config.search) &#123; %&gt;&lt;script type=&quot;text/javascript&quot;&gt;          var search_path = &quot;&lt;%= config.search.path %&gt;&quot;;    if (search_path.length == 0) &#123;        search_path = &quot;search.xml&quot;;    &#125;    var path = &quot;&lt;%= config.root %&gt;&quot; + search_path;    searchFunc(path, &#39;local-search-input&#39;, &#39;local-search-result&#39;);&lt;/script&gt;&lt;% &#125; %&gt;&lt;!-- syntax highlighting --&gt;&lt;% if (theme.comment_js) &#123; %&gt;&lt;script&gt;marked.setOptions(&#123;    highlight: function (code, lang) &#123;        return hljs.highlightAuto(code).value;    &#125;&#125;);function Highlighting()&#123;    var markdowns = document.getElementsByClassName(&#39;markdown&#39;);    for(var i=0;i&lt;markdowns.length;i++)&#123;        if(markdowns[i].innerHTML) markdowns[i].innerHTML =marked(markdowns[i].innerHTML);    &#125;&#125;window.addEventListener(&#39;DOMContentLoaded&#39;, Highlighting, false);window.addEventListener(&#39;load&#39;, Highlighting, false);&lt;/script&gt;&lt;% &#125; %&gt; </code></pre><p>添加完成之后，基本上是着最后一步困扰了很长时间，明天考完在补充相关的完整步骤，图片，和整理。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>多级分类</title>
       <link href="/2022/07/20/%E5%A4%9A%E7%BA%A7%E5%88%86%E7%B1%BB/"/>
       <url>/2022/07/20/%E5%A4%9A%E7%BA%A7%E5%88%86%E7%B1%BB/</url>

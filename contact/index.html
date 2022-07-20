@@ -23,6 +23,8 @@
 <link rel="stylesheet" href="/css/milk.css">
 
 
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
 <meta name="generator" content="Hexo 6.2.0"></head>
 <body>
   <div class="milk-header">
@@ -85,7 +87,19 @@
       </div>
     </span>
   </nav>
+
+
+<script src="/js/search.js"></script>
  
+
+    <script type="text/javascript">
+        var search_path = "search.xml";
+        if (search_path.length == 0) {
+            search_path = "search.xml";
+        }
+        var path = "/" + search_path;
+        searchFunc(path, 'local-search-input', 'local-search-result');
+    </script> 
   </div>
   <div class="milk-body">
     
@@ -227,5 +241,13 @@
 <link rel="stylesheet" href="tipuesearch/tipuesearch.css">
 <script src="tipuesearch/tipuesearch_set.js"></script>
 <script src="tipuesearch/tipuesearch.min.js"></script>
+<script type="text/javascript">      
+  var search_path = "search.xml";
+  if (search_path.length == 0) {
+    search_path = "search.xml";
+  }
+  var path = "/" + search_path;
+  searchFunc(path, 'local-search-input', 'local-search-result');
+</script>
 </body>
 </html>

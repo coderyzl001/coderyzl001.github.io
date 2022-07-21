@@ -1,18 +1,5 @@
 
 
-
-<script src="/js/search.js"></script>
- 
-
-    <script type="text/javascript">
-        var search_path = "search.xml";
-        if (search_path.length == 0) {
-            search_path = "search.xml";
-        }
-        var path = "/" + search_path;
-        searchFunc(path, 'local-search-input', 'local-search-result');
-    </script>
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -123,15 +110,22 @@
         
           <li>&gt;</li>
           <li>
-            <a href="/categories/python/">
-          python
+            <a href="/categories/档案/">
+          档案
         </a>
           </li>
       
           <li>&gt;</li>
           <li>
-            <a href="/categories/python/思路/">
-          思路
+            <a href="/categories/档案/编档/">
+          编档
+        </a>
+          </li>
+      
+          <li>&gt;</li>
+          <li>
+            <a href="/categories/档案/编档/2022-7/">
+          2022-7
         </a>
           </li>
       
@@ -293,19 +287,30 @@ matplotlib
 <link rel="stylesheet" href="tipuesearch/tipuesearch.css">
 <script src="tipuesearch/tipuesearch_set.js"></script>
 <script src="tipuesearch/tipuesearch.min.js"></script>
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
 
-  <script type="text/javascript">      
-    var search_path = "search.xml";
-  if (search_path.length == 0) {
-    search_path = "search.xml";
-  }
-  var path = "/" + search_path;
-    searchFunc(path, 'local-search-input', 'local-search-result');
-  </script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
 
 
 <!-- syntax highlighting -->
-
 
 </body>
 </html>

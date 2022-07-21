@@ -1,18 +1,5 @@
 
 
-
-<script src="/js/search.js"></script>
- 
-
-    <script type="text/javascript">
-        var search_path = "search.xml";
-        if (search_path.length == 0) {
-            search_path = "search.xml";
-        }
-        var path = "/" + search_path;
-        searchFunc(path, 'local-search-input', 'local-search-result');
-    </script>
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -264,19 +251,30 @@
 <link rel="stylesheet" href="tipuesearch/tipuesearch.css">
 <script src="tipuesearch/tipuesearch_set.js"></script>
 <script src="tipuesearch/tipuesearch.min.js"></script>
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
 
-  <script type="text/javascript">      
-    var search_path = "search.xml";
-  if (search_path.length == 0) {
-    search_path = "search.xml";
-  }
-  var path = "/" + search_path;
-    searchFunc(path, 'local-search-input', 'local-search-result');
-  </script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
 
 
 <!-- syntax highlighting -->
-
 
 </body>
 </html>

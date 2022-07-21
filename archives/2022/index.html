@@ -1,18 +1,5 @@
 
 
-
-<script src="/js/search.js"></script>
- 
-
-    <script type="text/javascript">
-        var search_path = "search.xml";
-        if (search_path.length == 0) {
-            search_path = "search.xml";
-        }
-        var path = "/" + search_path;
-        searchFunc(path, 'local-search-input', 'local-search-result');
-    </script>
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -101,19 +88,11 @@
  
   </div>
   <div class="milk-body">
-    <script type="text/javascript">      
-  var search_path = "search.xml";
-  if (search_path.length == 0) {
-    search_path = "search.xml";
-  }
-  var path = "/" + search_path;
-  searchFunc(path, 'local-search-input', 'local-search-result');
-</script>
-<div id="site_search">
+    <div id="site_search">
   <input type="text" id="local-search-input" name="q" results="0" placeholder="search my blog..." class="form-control"/>
   <div id="local-search-result"></div>
-</div>
- 
+</div> 
+
 
 <div class="win">
   
@@ -216,30 +195,6 @@
                   <h1 itemprop="name">
                     <a href="/2022/07/17/M2-2022-2-17/">
                       记录
-                    </a>
-                  </h1>
-                
-              </header>
-            </div>
-          </article>
-        </div>
-      
-         
-        
-        
-        <div class="archive-item">
-          <article class="archive-article archive-type-post">
-            <div class="archive-article-inner">
-              <header class="archive-article-header">
-                <a href="/2022/07/17/m/">
-                  <time datetime="2022-07-17T14:16:23.000Z" itemprop="datePublished">
-                    2022-07-17
-                  </time>
-                </a>
-                
-                  <h1 itemprop="name">
-                    <a href="/2022/07/17/m/">
-                      m
                     </a>
                   </h1>
                 
@@ -392,30 +347,6 @@
           </article>
         </div>
       
-         
-        
-        
-        <div class="archive-item">
-          <article class="archive-article archive-type-post">
-            <div class="archive-article-inner">
-              <header class="archive-article-header">
-                <a href="/2022/07/15/%E5%BA%8F%E8%A8%80/">
-                  <time datetime="2022-07-15T04:23:22.000Z" itemprop="datePublished">
-                    2022-07-15
-                  </time>
-                </a>
-                
-                  <h1 itemprop="name">
-                    <a href="/2022/07/15/%E5%BA%8F%E8%A8%80/">
-                      序言
-                    </a>
-                  </h1>
-                
-              </header>
-            </div>
-          </article>
-        </div>
-      
     </div>
     <div class="paginator">
       <span class="page-number current">1</span>
@@ -453,19 +384,30 @@
 <link rel="stylesheet" href="tipuesearch/tipuesearch.css">
 <script src="tipuesearch/tipuesearch_set.js"></script>
 <script src="tipuesearch/tipuesearch.min.js"></script>
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
 
-  <script type="text/javascript">      
-    var search_path = "search.xml";
-  if (search_path.length == 0) {
-    search_path = "search.xml";
-  }
-  var path = "/" + search_path;
-    searchFunc(path, 'local-search-input', 'local-search-result');
-  </script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
 
 
 <!-- syntax highlighting -->
-
 
 </body>
 </html>

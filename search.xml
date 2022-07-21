@@ -11,6 +11,16 @@
         <content type="html"><![CDATA[<p>  对于一个没有编程基础的孩子，这是一个十分难的事情，所以更要记录，以防自己忘记。<br>来先看</p><p>先看后面的步骤，这是最重要的，我们要<br>编写搜索视图！！！！视图的话实在主题目录文件下的&#x2F;layout&#x2F;_widget&#x2F;创建试视图文件&#x2F;<br>然后编写搜索脚本！！：脚本是在主题目录下的source&#x2F;js&#x2F;创建新的脚本文件<br>然后将视图和脚本联系起来<br>即在主题目录&#x2F;layout&#x2F;_partial&#x2F;footer.ejs  下添加相关代码</p><pre><code>&lt;% if (config.search) &#123; %&gt;&lt;script type=&quot;text/javascript&quot;&gt;          var search_path = &quot;&lt;%= config.search.path %&gt;&quot;;    if (search_path.length == 0) &#123;        search_path = &quot;search.xml&quot;;    &#125;    var path = &quot;&lt;%= config.root %&gt;&quot; + search_path;    searchFunc(path, &#39;local-search-input&#39;, &#39;local-search-result&#39;);&lt;/script&gt;&lt;% &#125; %&gt;&lt;!-- syntax highlighting --&gt;&lt;% if (theme.comment_js) &#123; %&gt;&lt;script&gt;marked.setOptions(&#123;    highlight: function (code, lang) &#123;        return hljs.highlightAuto(code).value;    &#125;&#125;);function Highlighting()&#123;    var markdowns = document.getElementsByClassName(&#39;markdown&#39;);    for(var i=0;i&lt;markdowns.length;i++)&#123;        if(markdowns[i].innerHTML) markdowns[i].innerHTML =marked(markdowns[i].innerHTML);    &#125;&#125;window.addEventListener(&#39;DOMContentLoaded&#39;, Highlighting, false);window.addEventListener(&#39;load&#39;, Highlighting, false);&lt;/script&gt;&lt;% &#125; %&gt; </code></pre><p>添加完成之后，基本上是着最后一步困扰了很长时间，明天考完在补充相关的完整步骤，图片，和整理。</p>]]></content>
       
       
+      <categories>
+          
+          <category> 档案 </category>
+          
+          <category> 编档 </category>
+          
+          <category> 2022-7 </category>
+          
+      </categories>
+      
       
     </entry>
     
@@ -26,9 +36,11 @@
       
       <categories>
           
-          <category> python </category>
+          <category> 档案 </category>
           
-          <category> 思路 </category>
+          <category> 编档 </category>
+          
+          <category> 2022-7 </category>
           
       </categories>
       
@@ -45,6 +57,12 @@
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
       
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
       
     </entry>
     
@@ -60,26 +78,13 @@
       
       <categories>
           
-          <category> 大纲 </category>
+          <category> 档案 </category>
           
-          <category> 记录 </category>
+          <category> 编档 </category>
           
-          <category> 7/18 </category>
+          <category> 开始 </category>
           
       </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>m</title>
-      <link href="/2022/07/17/m/"/>
-      <url>/2022/07/17/m/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
       
       
     </entry>
@@ -96,7 +101,11 @@
       
       <categories>
           
-          <category> 生活 </category>
+          <category> 档案 </category>
+          
+          <category> 编档 </category>
+          
+          <category> 2022-7 </category>
           
       </categories>
       
@@ -194,29 +203,6 @@
           <category> 升级 </category>
           
           <category> 社交 </category>
-          
-          <category> 比赛 </category>
-          
-          <category> 努力 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>序言</title>
-      <link href="/2022/07/15/%E5%BA%8F%E8%A8%80/"/>
-      <url>/2022/07/15/%E5%BA%8F%E8%A8%80/</url>
-      
-        <content type="html"><![CDATA[<p>先说一下本blog记录的计划。</p><p>记录分为三大块:</p><blockquote><p>升级模块</p></blockquote><pre><code>升级模块下设有多个方面，可能后期会有补充每个方面的的顶置文章是对应的等级以及一些注解</code></pre><blockquote><p>大纲模块</p></blockquote><pre><code>本模块主要是为了记录一个时期或一段时间的计划与记录。存档模块分为两个小模块第一个是&gt;写对于一个时期的计划和记录 完成一个状态第二是封档模块 对于前一个阶段的模块封挡 </code></pre><p>生活模块</p><pre><code>第三个的话是记录一些琐碎的生活啊，有什么开心的啊，不开心的啊                                                                       </code></pre><p>&#x2F;&#x2F;更新于7&#x2F;15</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 序言 </category>
           
       </categories>
       
